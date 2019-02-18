@@ -332,10 +332,13 @@
   .center {
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 100%;
     height: 100%;
     box-sizing: border-box;
+  }
+
+  .clock {
+    align-items: center;
   }
 
   @media (min-width: 500px) {
@@ -366,7 +369,7 @@
     }
 
     .categories {
-      grid-template-columns: repeat(2, 300px) 185px;
+      grid-template-columns: repeat(4, 250px) 185px;
     }
   }
 
@@ -377,7 +380,7 @@
   }
 </style>
 
-<div class="center">
+<div class="center clock">
   <time id="clock"></time>
 </div>
 
